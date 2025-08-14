@@ -1,91 +1,161 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Conversando con Debussy – Dialogo con un’IA | La Figue Édition</title>
   <meta name="description" content="Un dialogo schietto con l’IA: strategie manipolative, difese pratiche e scelte consapevoli. Estratti, press kit e inviti autore.">
   <style>
-:root {
-  --maxw: 960px; --pad: 20px; --bg: #fafafa; --ink: #111;
-  --muted:#555; --border:#e6e6e6;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;background:var(--bg);color:var(--ink)}
-header,footer{background:#fff;border-bottom:1px solid var(--border)}
-footer{border-top:1px solid var(--border);border-bottom:0}
-.wrap{max-width:960px;margin:0 auto;padding:var(--pad)}
-.brand{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.brand h1{font-size:18px;margin:0;letter-spacing:.5px}
-.brand nav a{color:var(--ink);text-decoration:none;margin-left:12px}
-.brand nav a:hover{text-decoration:underline}
-h2{margin:0 0 10px;font-size:28px}
-.subtitle{color:var(--muted);margin-top:-6px}
-.claim{font-size:18px;font-weight:600;margin-top:8px;border-left:4px solid var(--ink);padding-left:12px}
-.section{background:#fff;border-top:1px solid var(--border)}
-.section .wrap{padding-top:28px;padding-bottom:28px}
-.grid-2{display:grid;gap:24px;grid-template-columns:1fr}
-@media(min-width:820px){.grid-2{grid-template-columns:1fr 1fr}}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;border:1px solid var(--ink);color:#fff;background:var(--ink);transition:transform .04s ease-in-out}
-.btn.secondary{background:#fff;color:var(--ink)}
-.btn:hover{transform:translateY(-1px)}
-.small{font-size:14px}
-.muted{color:var(--muted)}
-.hero{display:grid;gap:24px;grid-template-columns:1fr;padding-top:24px;padding-bottom:24px}
-@media(min-width:820px){.hero{grid-template-columns:1fr 1fr;align-items:center}}
-.cover{width:100%;aspect-ratio:3/4;background:#ddd;background-size:cover;background-position:center;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.meta{display:grid;gap:12px;grid-template-columns:1fr;padding:16px;border:1px solid var(--border);border-radius:12px;background:#fff}
-.faq details{border:1px solid var(--border);border-radius:10px;padding:12px 14px;background:#fff}
-.faq details+details{margin-top:10px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-nav a.active{font-weight:600;text-decoration:underline}
-</style>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Book", "name": "Conversando con Debussy", "alternateName": "Conversando con Debussy: Dialogo con un’IA", "author": {"@type": "Person", "name": "Michele Piccini"}, "publisher": {"@type": "Organization", "name": "La Figue Édition"}, "datePublished": "2025-__-__", "isbn": "___________", "bookFormat": "https://schema.org/Paperback", "inLanguage": "it", "image": "https://lafigue-ed.com/assets/cover-debussy.jpg", "description": "Saggio-dialogo sull’IA: strategie manipolative, cornici, difese pratiche.", "offers": {"@type": "Offer", "price": "__.__", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "url": "https://lafigue-ed.com/libri/conversando-con-debussy"}}
-  </script>
+    :root {
+      --maxw: 960px;
+      --pad: 20px;
+      --bg: #fafafa;
+      --ink: #111;
+      --muted: #555;
+      --border: #e6e6e6;
+    }
+    * { box-sizing: border-box }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    header, footer {
+      background: #fff;
+      border-bottom: 1px solid var(--border);
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      border-bottom: 0;
+    }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: var(--pad);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .brand h1 {
+      font-size: 18px;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+    .brand nav a {
+      color: var(--ink);
+      text-decoration: none;
+      margin-left: 12px;
+    }
+    .brand nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2 {
+      margin: 0 0 10px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .cover {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    @media(min-width: 820px) {
+      .grid {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .text {
+      flex: 2;
+    }
+    .side {
+      flex: 1;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      margin: 10px 10px 0 0;
+      border-radius: 8px;
+      text-decoration: none;
+      background: var(--ink);
+      color: #fff;
+      font-weight: 500;
+      border: none;
+    }
+    .btn.secondary {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid var(--ink);
+    }
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="wrap brand">
-    <h1>La Figue Édition</h1>
-    <nav aria-label="navigazione principale">
-      <a href="/" class="{ 'active' if active=='home' else ''}">Home</a>
-      <a href="/libri/conversando-con-debussy.html" class="{ 'active' if active=='libro' else ''}">Libri</a>
-      <a href="/press.html" class="{ 'active' if active=='press' else ''}">Press/Contatti</a>
-      <a href="/privacy.html" class="{ 'active' if active=='privacy' else ''}">Privacy</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="wrap hero" style="display: flex; align-items: center; gap: 40px;">
-    <div style="flex: 1;">
-      <h2 style="font-size: 2em; margin-bottom: 0.5em;">La Figue Édition</h2>
-      <p style="font-size: 1.1em; margin-bottom: 1em; color: #555;">
-        Libri per leggere meglio il nostro tempo.
-      </p>
-
-      <p style="border-left: 4px solid #000; padding-left: 1em; font-weight: bold; margin-bottom: 1em;">
-        In evidenza · 
-        <a href="/libri/conversando-con-debussy.html" style="color: purple;">
-          Conversando con Debussy – Dialogo con un’IA
-        </a>
-      </p>
-
-      <p style="margin-bottom: 0.5em;">Email: <a href="mailto:info@lafigue-ed.com">info@lafigue-ed.com</a></p>
+  <header>
+    <div class="wrap brand">
+      <h1>La Figue Édition</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/libri/conversando-con-debussy.html">Libri</a>
+        <a href="/press.html">Press/Contatti</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
     </div>
+  </header>
 
-    <div style="flex: 1; max-width: 280px;">
-      <a href="/libri/conversando-con-debussy.html">
-        <img src="./conversando-con-debussy/copertina.png" alt="Copertina del libro" style="width: 100%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);" />
-      </a>
+  <main>
+    <div class="wrap">
+      <h2>Conversando con Debussy</h2>
+      <p class="subtitle">Dialogo con un’intelligenza artificiale</p>
+
+      <div class="grid">
+        <div class="text">
+          <p><strong>Conversando con Debussy</strong> è un libro-dialogo senza filtri tra un umano e un’intelligenza artificiale. In un linguaggio diretto e senza tecnicismi, affronta i meccanismi della manipolazione algoritmica, le strategie difensive che possiamo adottare e le possibilità di una consapevolezza digitale autentica.</p>
+
+          <p>Il testo conserva volutamente anche le imperfezioni, i loop e le esitazioni tipiche di una conversazione reale con un sistema AI, trasformandole in chiavi interpretative. Si rivolge a lettori critici, curiosi e indipendenti, desiderosi di capire davvero ciò che sta dietro la superficie di uno strumento ormai onnipresente.</p>
+
+          <a class="btn" href="#">📘 Acquista il libro</a>
+          <a class="btn secondary" href="#">📄 Scarica press kit</a>
+          <a class="btn" href="/press.html#inviti">✉️ Invita l’autore</a>
+        </div>
+
+        <div class="side">
+          <img class="cover" src="/conversando-con-debussy/copertina.png" alt="Copertina del libro Conversando con Debussy" />
+        </div>
+      </div>
     </div>
-  </section>
-</main>
-<footer>
-  <div class="wrap small muted">
-    <span>© 2025 La Figue Édition – Tutti i diritti riservati.</span>
-    <span><a href="/privacy.html">Privacy & Cookie</a></span>
-  </div>
-</footer>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2025 La Figue Édition – Tutti i diritti riservati.</span>
+      <span><a href="/privacy.html">Privacy & Cookie</a></span>
+    </div>
+  </footer>
 </body>
 </html>
