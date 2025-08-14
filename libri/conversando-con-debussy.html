@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Conversando con Debussy – Dialogo con un’IA | La Figue Édition</title>
-  <meta name="description" content="Un dialogo schietto con l’IA: strategie manipolative, difese pratiche e scelte consapevoli. Estratti, press kit e inviti autore.">
-  <style>
-:root {<!DOCTYPE html>
-<html lang="it">
-<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Conversando con Debussy – Dialogo con un’IA | La Figue Édition</title>
-  <meta name="description" content="Un dialogo schietto con l’IA: strategie manipolative, difese e consapevolezza." />
+  <meta name="description" content="Un dialogo schietto che smonta le tattiche dell’algoritmo e restituisce potere al lettore." />
+
   <style>
     :root {
       --maxw: 960px;
@@ -22,9 +15,7 @@
       --muted: #555;
       --border: #e6e6e6;
     }
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
@@ -45,146 +36,103 @@
       margin: 0 auto;
       padding: var(--pad);
     }
-    nav a {
-      margin-right: 16px;
-      text-decoration: none;
-      color: var(--ink);
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
     }
-    nav a:hover {
+    .brand h1 {
+      font-size: 18px;
+      margin: 0;
+      letter-spacing: 0.5px;
+    }
+    .brand nav a {
+      color: var(--ink);
+      text-decoration: none;
+      margin-left: 12px;
+    }
+    .brand nav a:hover {
       text-decoration: underline;
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 0;
-    }
     h2 {
-      font-size: 20px;
+      margin: 0 0 10px;
+      font-size: 28px;
+    }
+    .subtitle {
       color: var(--muted);
-      margin-top: 0;
+      margin-top: -6px;
     }
     .claim {
-      font-weight: bold;
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 8px;
       border-left: 4px solid var(--ink);
       padding-left: 12px;
-      margin: 24px 0;
-      font-size: 18px;
-    }
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 28px;
-    }
-    .buttons a {
-      padding: 10px 20px;
-      border: 1px solid var(--ink);
-      border-radius: 6px;
-      text-decoration: none;
-      color: var(--ink);
-    }
-    .buttons a:first-child {
-      background: var(--ink);
-      color: #fff;
-    }
-    .cover {
-      max-width: 280px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      display: block;
-    }
-    .cover-container {
-      margin-top: 32px;
     }
     footer .wrap {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      gap: 10px;
       align-items: center;
+      justify-content: space-between;
       font-size: 14px;
       color: var(--muted);
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding: 40px 0;
+    }
+    @media(min-width: 800px) {
+      .hero {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 280px;
+    }
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid var(--ink);
+      text-decoration: none;
+      color: var(--ink);
+      transition: background 0.2s;
+    }
+    .buttons a:hover {
+      background: #ddd;
+    }
+    .buttons a.primary {
+      background: var(--ink);
+      color: #fff;
+      border: none;
+    }
+    .buttons a.primary:hover {
+      background: #333;
     }
   </style>
 </head>
 
-<body>
-  <header>
-    <div class="wrap">
-      <nav>
-        <strong>La Figue Édition</strong>
-        <a href="/">Home</a>
-        <a href="/libri/conversando-con-debussy.html"><strong>Libri</strong></a>
-        <a href="/press.html">Press/Contatti</a>
-        <a href="/privacy.html">Privacy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="wrap">
-      <h1>Conversando con Debussy</h1>
-      <h2>Dialogo con un’IA</h2>
-      <p class="claim">
-        Un dialogo schietto che smonta le tattiche dell’algoritmo e restituisce potere al lettore.
-      </p>
-      <div class="buttons">
-        <a href="#">Acquista il libro</a>
-        <a href="#">Scarica press kit</a>
-        <a href="#">Invita l’autore</a>
-      </div>
-      <div class="cover-container">
-        <img src="copertina.png" alt="Copertina del libro" class="cover" />
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="wrap">
-      <span>© 2025 La Figue Édition – Tutti i diritti riservati.</span>
-      <a href="/privacy.html">Privacy & Cookie</a>
-    </div>
-  </footer>
-</body>
-</html>
-
-  --maxw: 960px; --pad: 20px; --bg: #fafafa; --ink: #111;
-  --muted:#555; --border:#e6e6e6;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6;background:var(--bg);color:var(--ink)}
-header,footer{background:#fff;border-bottom:1px solid var(--border)}
-footer{border-top:1px solid var(--border);border-bottom:0}
-.wrap{max-width:960px;margin:0 auto;padding:var(--pad)}
-.brand{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.brand h1{font-size:18px;margin:0;letter-spacing:.5px}
-.brand nav a{color:var(--ink);text-decoration:none;margin-left:12px}
-.brand nav a:hover{text-decoration:underline}
-h2{margin:0 0 10px;font-size:28px}
-.subtitle{color:var(--muted);margin-top:-6px}
-.claim{font-size:18px;font-weight:600;margin-top:8px;border-left:4px solid var(--ink);padding-left:12px}
-.section{background:#fff;border-top:1px solid var(--border)}
-.section .wrap{padding-top:28px;padding-bottom:28px}
-.grid-2{display:grid;gap:24px;grid-template-columns:1fr}
-@media(min-width:820px){.grid-2{grid-template-columns:1fr 1fr}}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;border:1px solid var(--ink);color:#fff;background:var(--ink);transition:transform .04s ease-in-out}
-.btn.secondary{background:#fff;color:var(--ink)}
-.btn:hover{transform:translateY(-1px)}
-.small{font-size:14px}
-.muted{color:var(--muted)}
-.cover{width:100%;aspect-ratio:3/4;background-size:cover;background-position:center;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.meta{display:grid;gap:12px;grid-template-columns:1fr;padding:16px;border:1px solid var(--border);border-radius:12px;background:#fff}
-.faq details{border:1px solid var(--border);border-radius:10px;padding:12px 14px;background:#fff}
-.faq details+details{margin-top:10px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
-nav a.active{font-weight:600;text-decoration:underline}
-</style>
-</head>
 <body>
 <header>
   <div class="wrap brand">
     <h1>La Figue Édition</h1>
     <nav>
       <a href="/">Home</a>
-      <a href="/libri/conversando-con-debussy.html" class="active">Libri</a>
+      <a href="/libri/conversando-con-debussy.html">Libri</a>
       <a href="/press.html">Press/Contatti</a>
       <a href="/privacy.html">Privacy</a>
     </nav>
@@ -193,26 +141,26 @@ nav a.active{font-weight:600;text-decoration:underline}
 
 <main>
   <section class="wrap hero">
-    <div style="display: grid; gap: 40px; grid-template-columns: 1fr; align-items: center;">
-      <div>
-        <h2>Conversando con Debussy</h2>
-        <p class="subtitle">Dialogo con un’IA</p>
-        <p class="claim">Un dialogo schietto che smonta le tattiche dell’algoritmo e restituisce potere al lettore.</p>
-        <div class="cta" style="margin-top: 20px;">
-          <a class="btn" href="#">Acquista il libro</a>
-          <a class="btn secondary" href="#">Scarica press kit</a>
-          <a class="btn secondary" href="/press.html#inviti">Invita l’autore</a>
-        </div>
+    <div style="flex: 1;">
+      <h2>Conversando con Debussy</h2>
+      <p class="subtitle">Dialogo con un’IA</p>
+      <p class="claim">
+        Un dialogo schietto che smonta le tattiche dell’algoritmo e restituisce potere al lettore.
+      </p>
+      <div class="buttons">
+        <a href="#" class="primary">Acquista il libro</a>
+        <a href="#">Scarica press kit</a>
+        <a href="#">Invita l’autore</a>
       </div>
-      <div>
-        <img src="/libri/conversando-con-debussy/copertina.png" alt="Copertina del libro" class="cover" />
-      </div>
+    </div>
+    <div style="flex: 1;">
+      <img src="/libri/copertina.png" alt="Copertina del libro" class="cover" />
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="wrap small muted">
+  <div class="wrap">
     <span>© 2025 La Figue Édition – Tutti i diritti riservati.</span>
     <span><a href="/privacy.html">Privacy & Cookie</a></span>
   </div>
