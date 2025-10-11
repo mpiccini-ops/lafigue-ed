@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
@@ -6,96 +6,23 @@
   <title>La Figue Édition</title>
   <meta name="description" content="Libri per leggere meglio il nostro tempo.">
   <style>
-    :root {
-      --maxw: 960px;
-      --pad: 20px;
-      --bg: #fafafa;
-      --ink: #111;
-      --muted: #555;
-      --border: #e6e6e6;
-    }
+    :root { --maxw: 960px; --pad: 20px; --bg: #fafafa; --ink: #111; --muted: #555; --border: #e6e6e6; }
     * { box-sizing: border-box }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      background: var(--bg);
-      color: var(--ink);
-    }
-    header, footer {
-      background: #fff;
-      border-bottom: 1px solid var(--border);
-    }
-    footer {
-      border-top: 1px solid var(--border);
-      border-bottom: 0;
-    }
-    .wrap {
-      max-width: var(--maxw);
-      margin: 0 auto;
-      padding: var(--pad);
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .brand h1 {
-      font-size: 18px;
-      margin: 0;
-      letter-spacing: 0.5px;
-    }
-    .brand nav a {
-      color: var(--ink);
-      text-decoration: none;
-      margin-left: 12px;
-    }
-    .brand nav a:hover {
-      text-decoration: underline;
-    }
-    h2 {
-      margin: 0 0 10px;
-      font-size: 28px;
-    }
-    .subtitle {
-      color: var(--muted);
-      margin-top: -6px;
-    }
-    .claim {
-      font-size: 18px;
-      font-weight: 600;
-      margin-top: 8px;
-      border-left: 4px solid var(--ink);
-      padding-left: 12px;
-    }
-    footer .wrap {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 14px;
-      color: var(--muted);
-    }
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      padding: 40px 0;
-    }
-    @media(min-width: 800px) {
-      .hero {
-        flex-direction: row;
-        align-items: center;
-      }
-    }
-    .hero img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      max-width: 280px;
-    }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; background: var(--bg); color: var(--ink); }
+    header, footer { background: #fff; border-bottom: 1px solid var(--border); }
+    footer { border-top: 1px solid var(--border); border-bottom: 0; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: var(--pad); }
+    .brand { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .brand h1 { font-size: 18px; margin: 0; letter-spacing: 0.5px; }
+    .brand nav a { color: var(--ink); text-decoration: none; margin-left: 12px; }
+    .brand nav a:hover { text-decoration: underline; }
+    h2 { margin: 0 0 10px; font-size: 28px; }
+    .subtitle { color: var(--muted); margin-top: -6px; }
+    .claim { font-size: 18px; font-weight: 600; margin-top: 8px; border-left: 4px solid var(--ink); padding-left: 12px; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; font-size: 14px; color: var(--muted); }
+    .hero { display: flex; flex-direction: column; gap: 24px; padding: 40px 0; }
+    @media(min-width: 800px){ .hero { flex-direction: row; align-items: center; } }
+    .hero img { width: 100%; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 280px; }
   </style>
 </head>
 <body>
@@ -104,7 +31,7 @@
     <h1>La Figue Édition</h1>
     <nav>
       <a href="/">Home</a>
-      <!-- Link corretto: cartella con slash finale -->
+      <!-- Link a cartella (slash finale) -->
       <a href="/libri/conversando-con-debussy/">Libri</a>
       <a href="/press.html">Press/Contatti</a>
       <a href="/privacy.html">Privacy</a>
@@ -117,36 +44,30 @@
     <div style="flex: 1;">
       <h2>La Figue Édition</h2>
       <p class="subtitle">Libri per leggere meglio il nostro tempo.</p>
-     <p class="claim">
-  In evidenza:
-  <br>
-  <!-- Link corretto -->
-  • <a href="/libri/conversando-con-debussy/">Conversando con Debussy – Dialogo con un’IA</a>
-  <br>
-  <!-- Link alla pagina di Dora (assumo stessa struttura “a cartella”) -->
-  • <a href="/libri/la-vera-storia-di-dora/">La vera storia di Dora – o dell’“Indicatore”</a>
-</p>
+      <p class="claim">
+        In evidenza:<br>
+        • <a href="/libri/conversando-con-debussy/">Conversando con Debussy – Dialogo con un’IA</a><br>
+        • <a href="/libri/la-vera-storia-di-dora/">La vera storia di Dora – o dell’“Indicatore”</a>
+      </p>
       <p>Email: <a href="mailto:info@lafigue-ed.com">info@lafigue-ed.com</a></p>
     </div>
-  <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;">
-  <div style="text-align: center;">
-  <!-- Link corretto -->
-  <a href="/libri/conversando-con-debussy/">
-    <img src="/libri/copertina.png" alt="Copertina del libro Conversando con Debussy" style="width: 240px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;" />
-    <p>Conversando con Debussy</p>
-  </a>
-</div>
 
-<div style="text-align: center;">
-  <!-- Link corretto -->
-  <a href="/libri/la-vera-storia-di-dora/">
-    <!-- Nome file corretto (se il tuo file si chiama diversamente, mantieni quel nome) -->
-    <img src="/libri/copertina-dora.png" alt="Copertina del libro La vera storia di Dora" style="width: 240px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;" />
-    <p>La vera storia di Dora</p>
-  </a>
-</div>
+    <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;">
+      <div style="text-align: center;">
+        <a href="/libri/conversando-con-debussy/">
+          <img src="/libri/copertina.png" alt="Copertina del libro Conversando con Debussy" style="width: 240px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;" />
+          <p>Conversando con Debussy</p>
+        </a>
+      </div>
 
-         </div>
+      <div style="text-align: center;">
+        <a href="/libri/la-vera-storia-di-dora/">
+          <!-- metti qui esattamente il nome del file che hai in repo -->
+          <img src="/libri/copertina-dora.png" alt="Copertina del libro La vera storia di Dora" style="width: 240px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;" />
+          <p>La vera storia di Dora</p>
+        </a>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -158,4 +79,5 @@
 </footer>
 </body>
 </html>
+
 
