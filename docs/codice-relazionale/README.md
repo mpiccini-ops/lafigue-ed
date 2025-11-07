@@ -19,3 +19,4 @@ Licenza: CC BY-SA 4.0
 
 > “Ogni dialogo tra umano e intelligenza artificiale deve restare asimmetrico, trasparente e fondato sulla responsabilità del primo.”  
 > — *Codice Relazionale Operativo 2.0*
+
